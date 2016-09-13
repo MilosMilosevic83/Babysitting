@@ -1,0 +1,72 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.main-slider-wrap {
+  background:url(../img/light-bg2.png) no-repeat center center;
+  margin-top: 50px;
+}
+.main-slider-menu {
+  padding:20px 0;
+   font-family:$font-main; 
+   background:#F7F7F7;
+ @include box-shadow(0px 0px 17px 0px rgba(50, 50, 50, 0.15));
+   h2 {
+    @extend %headline;
+   }
+}
+a.bio {
+  @extend %buttons;
+    float: none !important;
+    margin:20px auto;
+    clear: both;
+    background:#C8E7E9;
+}
+.thumbnail {
+  border:0;
+  background:transparent;
+}
+.fff {
+  background:#F1F1F1;
+  padding-top:20px;
+}
+
+ul.thumbnails { 
+    margin-bottom: 0px;
+    padding:0;
+
+  li { list-style-type:none;
+    @include breakpoint(medium_screen1){
+        padding: 0;
+        }
+      }
+}
+
+.caption {
+      background:transparent !important;
+      padding:20px;
+      text-align:center;
+    p {  
+      color: #999;
+      font-size: .9em;
+    }
+  }
+
+.control-box {
+    text-align: center;
+    width: 100%;
+}
+.pager {
+  li {
+
+     > a {
+        width: 50px;
+        height: 50px;
+        margin:10px;
+        @include rounded(50%);
+        border:0;
+        line-height: 40px;
+        color: #fff;
+        background:#FEE159;
+      }
+    }  
+  }

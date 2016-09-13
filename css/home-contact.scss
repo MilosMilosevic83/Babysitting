@@ -1,0 +1,58 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+.contact {
+   padding:10px 0;
+   > div{
+    overflow: hidden;
+    padding:15px;
+    background:#F7F7F7;
+   }
+  h2 {
+    @extend %headline;
+    text-align:left;
+  }
+  p {
+    @extend %text;
+    text-align: left;
+  }
+}
+.social {
+  display: table;
+  width:200px;
+  text-align:center;
+  float: none;
+  margin: 30px auto 0 auto;
+  a {
+    display: table-cell;
+  }
+  img {
+    max-width:50px;
+  }
+}
+
+/*FOOTER
+=================================================================================
+================================================================================= */
+.footer-wrap-bg {
+  background:#85D5D6;
+  padding: 0;
+  div {
+    &:nth-of-type(2){
+      a {
+        color: #fff;
+        float: right;
+        display: block;
+        padding:60px 0;
+         font-family:$font-main;
+        @include breakpoint(medium_screen1){
+        float: none;
+        text-align:center;
+        padding:20px 0 40px 0;
+        }
+      }
+    }
+    &:nth-of-type(1){
+      padding:0;
+    }
+  }
+}

@@ -1,0 +1,87 @@
+
+
+@import 'mixins.scss';
+@import 'variables.scss';
+h1.services-headline {
+  text-align: center;
+  font-weight: 700;
+}
+.about-agency {
+      font-family:$font-main !important;
+      h2 {
+        text-align:center;
+        padding:30px 0;
+      }
+      p {
+        text-align:justify !important;
+      }
+}
+.babysitters {
+    font-family:$font-main !important;
+      padding-bottom:40px;
+  h2 {
+    text-align: center;
+    padding:30px 0;
+    }
+  div {
+    .inner-content {
+    text-align: center;
+    padding:30px 10px;
+    border:1px solid #F7F7F7;
+    margin-top:20px;
+    overflow: hidden;
+    }
+    img {
+      @include breakpoint(medium_screen1){
+        display: block;
+        max-width: 80px;
+        margin:0 auto;
+      }
+    }
+    p {
+      font-weight: 700;
+      display: block;
+      padding:15px 0;
+    }
+    a {
+      font-size: 1.1em;
+      font-weight: 700;
+      color: #85D5D6;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.modal-header {
+  border-bottom:0;
+  h4 {
+    margin-top: 40px;
+    font-size: 2em;
+  }
+  button.close {
+    font-size: 1.4em !important;
+  }
+}
+.modal-content {
+  @include rounded(0);
+}
+.modal-body {
+  border-bottom:0;
+  padding:40px;
+  p {
+     font-weight: 300 !important;
+  }
+}
+.modal-footer {
+  border-top:0 !important;
+}
+.close-btn {
+  @extend %buttons;
+  margin:20px auto;
+  float: none;
+  border:1px solid #FEE159;
+  &:hover {
+   border:1px solid #2F2F2F !important;
+   }
+}

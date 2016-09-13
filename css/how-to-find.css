@@ -1,0 +1,55 @@
+.how-to a {
+  display: block;
+  font-size: 1.3em;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding: 5px 20px;
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  float: right;
+  line-height: 48px;
+  background: #FEE159;
+  cursor: pointer;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.how-to a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #2F2F2F;
+}
+
+@media (max-width: 768px) {
+  .how-to a {
+    margin: 50px auto;
+  }
+}
+
+.how-to h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  margin: 0;
+  padding: 40px 0;
+  color: #85D5D6;
+  text-align: center;
+}
+
+.how-to p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.2em;
+  color: #8C8C8C;
+  text-align: center;
+}
+
+.how-to {
+  padding: 40px 0;
+}
+
+.how-to a {
+  float: none;
+  margin: 20px auto;
+}

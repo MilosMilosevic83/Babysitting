@@ -1,0 +1,134 @@
+
+@import 'mixins.scss';
+@import 'variables.scss';
+
+
+
+body {
+  margin:0;
+  padding:0;
+}
+
+nav {
+        background:#85D5D6;
+        display: block;
+        height: 100%;
+        overflow: auto;
+        position: fixed;
+        right: -22em;
+        font-size: 15px;
+        top: 0;
+        width: 16em;
+        z-index: 2000;
+        @include transition(right 0.3s ease-in-out 0s);
+     
+}
+.navbar-fixed-top {
+  position: fixed;
+  right: 0 !important;
+  left:300px;
+  z-index: 1030;
+}
+
+.navbar-header {
+  background:rgb(14,17,26);
+  a {
+    position: relative;
+    background:#85D5D6;
+    width: 145px;
+    @include rounded(25px);
+    margin-right: 15px;
+    p {
+      position: absolute;
+      left:25px;
+      top: 15px;
+    }
+  }
+ span {
+    display: block;
+    width:26px;
+    height:5px;
+    margin-top:2px;
+    margin-left: 60px;
+    background:#fff;
+    } 
+
+  } 
+
+.landing-bg {
+      background:url(../img/landing-bg.jpg) no-repeat top center;
+  @include bg(cover);
+  padding:0 0 200px 0;
+
+}
+.dektop-logo-menu-wrap {
+    width: 100%;
+    overflow: hidden;
+    font-family:$font-main; 
+    padding:0 0 40px 0;
+    position:relative;
+  }
+.desktop-logo-main {
+  position: absolute;
+  width: 200px;
+  height:70px;
+  top:0;
+  left:0;
+  z-index: 2000;
+  @include breakpoint(medium_screen1){
+          height: 50px;
+          width: 120px;
+          overflow: hidden;
+          top: 20px;
+          left:0;
+          img {
+            width: 120px;
+            height: 50px;
+
+          }
+        }
+      }
+.main-menu {
+  li {
+    padding:0;
+    border-bottom:1px solid #88C9CC;
+
+    a {
+      display: block;
+      width: 100%;
+      padding:20px;
+         &:hover {
+        background:#88C9CC;
+       }
+    }
+  }
+}
+.main-headline {
+    text-align: right;
+    padding-top:2.2%;
+    h1 {
+      margin:200px 0 30px 0;
+      padding:80px 0 20px 0;
+      color: #fff;
+      font-weight: 300;
+      font-size: 3.5em;
+
+        @include breakpoint(medium_screen1){
+          margin:150px auto 30px auto;
+          padding:0;
+          font-size: 1.8em;
+          text-align: center;
+        }
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+
+  .main-btn {
+    @extend %buttons;
+    @include breakpoint(medium_screen1){
+          float: none !important;
+      }
+    
+  }

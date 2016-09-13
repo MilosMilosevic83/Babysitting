@@ -1,0 +1,18 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+
+.how-to {
+  padding: 40px 0;
+  h2 {
+    @extend %headline;
+  }
+  p {
+    @extend %text;
+  }
+  a {
+    @extend %buttons;
+    float: none !important;
+    margin:20px auto;
+  }
+}
+

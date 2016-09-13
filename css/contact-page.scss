@@ -1,0 +1,122 @@
+@import 'mixins.scss';
+@import 'variables.scss';
+.contact-info {
+  margin-top: 40px;
+  font-family: $font-main;
+  a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding:5px 0;
+  }
+}
+.form-wrap {
+  margin-top: 40px;
+  h2 {
+      font-family: $font-main;
+      font-size: 1.9em;
+      text-align: center;
+      padding: 20px 0 80px 0!important;
+      color:rgb(16,19,28);
+      font-weight: 300;
+  }
+}
+.message-wrap {
+  padding:0 10px!important;
+}
+.form-group-wrap {
+  clear: both;
+  float:none !important;
+    @include breakpoint(medium_screen1){
+      width:100% !important;
+    }
+}
+
+.form-group {
+  color:rgb(14,16,28);
+  padding:0 !important;
+  width: 50%;
+  float: left;
+  padding-right:10px !important;
+  @include breakpoint(medium_screen1) {
+    width: 100%;
+    padding-right:0 !important;
+  }
+  label {
+    font-family: $font-main;
+    color: rgb(14,16,28);
+    font-size: 1em;
+  }
+  input {
+    
+     @include rounded(0);
+    width: 100% !important;
+    background:transparent;
+  }
+  textarea {
+     @include rounded(0);
+  }
+}
+.form-group-text {
+  color:rgb(14,16,28);
+  padding-right:0 !important;
+  width: 100% !important;
+  display: block !important;
+  clear: both !important;
+ label {
+    font-family: $font-main;
+    color: rgb(14,16,28);
+    font-size: 1em;
+  }
+  input {
+     @include rounded(0);
+
+  }
+  textarea {
+     @include rounded(0);
+    color: rgb(14,16,28);
+
+  }
+}
+
+.form-control {
+  padding:10px 12px !important; 
+  width: 100% !important;
+  height: 45px;
+   border:1px solid rgb(14,16,28);
+     background:transparent;
+     color:rgb(14,16,28);
+     &:focus {
+      border-color: rgb(14,16,28);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    }
+}
+
+  .btn{
+    @extend %buttons;
+    margin:30px auto!important;
+    border:1px solid #FEE159;
+     &:hover{
+      border:1px solid #2F2F2F;
+     }
+    }
+    .btn-success:focus {
+    color: #fff;
+    background: #2F2F2F;
+    border:0;
+}
+.comment-head {
+  padding-left:15px;
+  font-family: $font-main;
+  color: #fff;
+  padding-top:20px;
+}
+.landing-bg2 {
+        background:url(../img/landing-bg.jpg) no-repeat top center;
+  @include bg(cover);
+  padding:0 0 200px 0;
+  @include breakpoint(medium_screen1){
+      padding:0 0 100px 0;
+    }
+}
